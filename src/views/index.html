@@ -1,14 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/styles.css">
-  <title>Telegram Web App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Александр Смирнов — Creative Developer и UI/UX Architect." />
+  <title>Александр Смирнов — Creative Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-  <h1>Welcome to Telegram Web App</h1>
-  <p>This application is designed to work exclusively with Telegram.</p>
+  <div class="glow glow-one"></div><div class="glow glow-two"></div>
+  <header class="topbar">
+    <button class="brand" data-tab="home" aria-label="На главную"><span class="brand-mark">✦</span><span>ALEXANDER</span></button>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <button class="nav-link active" data-tab="home">Главная</button><button class="nav-link" data-tab="about">Обо мне</button><button class="nav-link" data-tab="services">Услуги</button><button class="nav-link" data-tab="work">Кейсы</button><button class="nav-link" data-tab="contact">Контакты</button>
+    </nav>
+    <button class="header-cta" data-tab="contact">Обсудить проект <span>↗</span></button>
+  </header>
+
+  <main class="container">
+    <section class="page active" id="home">
+      <div class="hero">
+        <p class="availability"><i></i> AVAILABLE FOR SELECT PROJECTS</p>
+        <p class="eyebrow">CREATIVE DEVELOPER · UI/UX ARCHITECT</p>
+        <h1>Создаю продукты,<br /><em>которыми хочется</em><br />пользоваться.</h1>
+        <p class="hero-copy">Помогаю амбициозным компаниям превращать сложные идеи в ясные, быстрые и эстетичные цифровые сервисы.</p>
+        <div class="actions"><button class="button primary" data-tab="work">Смотреть кейсы <span>→</span></button><button class="button secondary" data-tab="contact">Начать диалог</button></div>
+      </div>
+      <div class="stats"><div><strong>8+</strong><span>лет в digital</span></div><div><strong>42</strong><span>запущенных продукта</span></div><div><strong>95+</strong><span>средний Lighthouse</span></div></div>
+      <div class="feature-grid">
+        <article class="glass-card"><span class="card-icon">✦</span><h2>Внятный UX</h2><p>Проектирую логику, которая ведёт пользователя к цели без лишних шагов.</p></article>
+        <article class="glass-card"><span class="card-icon">↯</span><h2>Быстрый frontend</h2><p>Пишу чистый и надёжный код, который приятно поддерживать и развивать.</p></article>
+        <article class="glass-card"><span class="card-icon">◫</span><h2>Единый язык</h2><p>Соединяю стратегию, дизайн и разработку в работающую систему продукта.</p></article>
+      </div>
+    </section>
+
+    <section class="page" id="about"><header class="section-heading"><p class="eyebrow">01 / ОБО МНЕ</p><h1>От идеи до точного <em>интерфейса.</em></h1><p>Работаю на стыке продуктового мышления, визуального дизайна и инженерной культуры.</p></header><div class="two-column"><article class="glass-card"><h2>Мой подход</h2><p class="large-copy">Сначала — контекст и задача бизнеса. Затем — простая структура, сильная визуальная идея и детали, которые создают ощущение качества.</p><div class="skill-list"><span>Product strategy</span><span>UI/UX systems</span><span>React &amp; Next.js</span><span>Motion design</span><span>Design direction</span></div></article><article class="glass-card timeline"><h2>Опыт</h2><div><b>2023 — сейчас</b><h3>Lead Frontend Architect</h3><p>Сложные SaaS-системы и цифровые экосистемы.</p></div><div><b>2021 — 2023</b><h3>UI/UX Engineer</h3><p>E-commerce, сервисы и дизайн-системы.</p></div><div><b>2019 — 2021</b><h3>Product Designer</h3><p>Интерфейсы и прототипы для стартапов.</p></div></article></div></section>
+
+    <section class="page" id="services"><header class="section-heading"><p class="eyebrow">02 / УСЛУГИ</p><h1>Форматы для задач<br /><em>любого масштаба.</em></h1></header><div class="pricing-grid"><article class="glass-card pricing"><p class="eyebrow">STARTUP</p><h2>Landing page</h2><p>Страница, которая ясно рассказывает о продукте и конвертирует интерес в заявку.</p><ul><li>Индивидуальный дизайн</li><li>Адаптивная вёрстка</li><li>Запуск от 5 дней</li></ul><strong>от $600</strong><button class="button secondary service-button" data-service="Landing page">Выбрать формат</button></article><article class="glass-card pricing featured"><p class="eyebrow">POPULAR</p><h2>SaaS / E-commerce</h2><p>Полноценный продукт с продуманными пользовательскими сценариями.</p><ul><li>Сложный интерфейс</li><li>Интеграции и API</li><li>Запуск от 14 дней</li></ul><strong>от $1,400</strong><button class="button primary service-button" data-service="SaaS / E-commerce">Выбрать формат</button></article><article class="glass-card pricing"><p class="eyebrow">DESIGN ONLY</p><h2>UI/UX дизайн</h2><p>Исследование, визуальная система и интерактивный прототип в Figma.</p><ul><li>Дизайн-система</li><li>Кликабельный прототип</li><li>Запуск от 7 дней</li></ul><strong>от $500</strong><button class="button secondary service-button" data-service="UI/UX дизайн">Выбрать формат</button></article></div></section>
+
+    <section class="page" id="work"><header class="section-heading"><p class="eyebrow">03 / ИЗБРАННЫЕ РАБОТЫ</p><h1>Кейсы с измеримым<br /><em>результатом.</em></h1></header><div class="filters"><button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="web">Веб-сервисы</button><button class="filter" data-filter="mobile">Мобильные</button></div><div class="case-grid"><article class="case-card glass-card" data-category="web"><div class="case-visual violet"><span>◔</span></div><p class="eyebrow">FINTECH · WEB</p><h2>Crypto Trading Dashboard</h2><p>Панель управления активами с живыми данными и понятной аналитикой.</p><button class="text-button case-trigger" data-case="crypto">Открыть кейс →</button></article><article class="case-card glass-card" data-category="web"><div class="case-visual peach"><span>✳</span></div><p class="eyebrow">E-COMMERCE · WEB</p><h2>Luxe Apparel Store</h2><p>Премиальный интернет-магазин с новой логикой выбора и покупки.</p><button class="text-button case-trigger" data-case="luxe">Открыть кейс →</button></article><article class="case-card glass-card" data-category="mobile"><div class="case-visual blue"><span>⌁</span></div><p class="eyebrow">HEALTH · MOBILE</p><h2>Pulse Health Companion</h2><p>Мобильный сервис, который помогает выстроить заботу о себе.</p><button class="text-button case-trigger" data-case="pulse">Открыть кейс →</button></article></div></section>
+
+    <section class="page" id="contact"><header class="section-heading"><p class="eyebrow">04 / КОНТАКТЫ</p><h1>Есть идея?<br /><em>Давайте обсудим.</em></h1><p>Обычно отвечаю в течение одного рабочего дня.</p></header><div class="contact-grid"><aside class="glass-card contact-info"><a href="mailto:alexander@studio.com"><small>EMAIL</small>alexander@studio.com <span>↗</span></a><a href="https://t.me/alexander_dev"><small>TELEGRAM</small>@alexander_dev <span>↗</span></a><p><small>ДОСТУПНОСТЬ</small>Пн — Пт · 10:00–19:00 UTC+3</p></aside><form class="glass-card contact-form"><label>Ваше имя<input required name="name" placeholder="Алексей" /></label><label>Контакты<input required name="contact" placeholder="Email или Telegram" /></label><label>Формат работы<select name="service"><option>Выберите услугу</option><option>Landing page</option><option>SaaS / E-commerce</option><option>UI/UX дизайн</option></select></label><label>Расскажите о задаче<textarea name="message" placeholder="Цели, сроки, важные детали..."></textarea></label><button class="button primary" type="submit">Отправить запрос <span>→</span></button><p class="form-message" role="status"></p></form></div></section>
+  </main>
+  <nav class="mobile-nav" aria-label="Мобильная навигация"><button class="nav-link active" data-tab="home">⌂<small>Главная</small></button><button class="nav-link" data-tab="about">◉<small>Обо мне</small></button><button class="nav-link" data-tab="services">✦<small>Услуги</small></button><button class="nav-link" data-tab="work">▣<small>Кейсы</small></button><button class="nav-link" data-tab="contact">✉<small>Контакты</small></button></nav>
+  <footer>© 2026 ALEXANDER SMIRNOV <span>·</span> DESIGNED WITH PRECISION</footer>
+  <dialog class="case-dialog"><button class="dialog-close" aria-label="Закрыть">×</button><p class="eyebrow dialog-tag"></p><h2 class="dialog-title"></h2><p class="dialog-description"></p><div class="case-details"><div><small>ТЕХНОЛОГИИ</small><p class="dialog-stack"></p></div><div><small>РЕЗУЛЬТАТ</small><p class="dialog-result"></p></div></div><button class="button primary dialog-contact" data-tab="contact">Обсудить похожий проект</button></dialog>
   <script src="/js/scripts.js"></script>
-</body>
-</html>
+</body></html>
